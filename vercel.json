@@ -11,6 +11,27 @@
       }
     },
     {
+      "src": "/favicon.ico",
+      "dest": "/favicon.ico",
+      "headers": {
+        "cache-control": "s-maxage=31536000,immutable"
+      }
+    },
+    {
+      "src": "/favicon.svg",
+      "dest": "/favicon.svg",
+      "headers": {
+        "cache-control": "s-maxage=31536000,immutable"
+      }
+    },
+    {
+      "src": "/manifest.json",
+      "dest": "/manifest.json",
+      "headers": {
+        "cache-control": "s-maxage=86400"
+      }
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }

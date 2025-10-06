@@ -111,7 +111,7 @@ function App() {
     <div className="app">
       <div className="container">
         <header className="header">
-          <h1 className="title">💕 Motmot Counter 💕 - DEPLOYED VERSION</h1>
+          <h1 className="title">💕 Motmot Counter 💕</h1>
           <p className="subtitle">Track your beautiful journey together</p>
         </header>
 

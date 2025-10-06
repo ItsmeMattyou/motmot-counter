@@ -36,11 +36,7 @@ function App() {
     const hours = Math.floor(minutes / 60);
     const days = Math.floor(hours / 24);
     const weeks = Math.floor(days / 7);
-    
-
     const months = Math.floor(days / 30.44);
-    
-
     const anniversaries = Math.floor(days / 365.25);
 
     const elapsed = {
@@ -66,7 +62,6 @@ function App() {
     return { elapsed, total };
   };
 
-
   useEffect(() => {
     if (!startDate) return;
 
@@ -80,7 +75,6 @@ function App() {
 
     return () => clearInterval(interval);
   }, [startDate]);
-
 
   useEffect(() => {
     if (startDate) {
@@ -101,7 +95,6 @@ function App() {
     setSelectedUnit(selectedUnit === unit ? null : unit);
   };
 
-
   const isLargeNumber = (num) => {
     return num >= 1000 || (num >= 100 && selectedUnit);
   };
@@ -118,7 +111,7 @@ function App() {
     <div className="app">
       <div className="container">
         <header className="header">
-          <h1 className="title">💕 Motmot Counter 💕</h1>
+          <h1 className="title">💕 Motmot Counter 💕 - DEPLOYED VERSION</h1>
           <p className="subtitle">Track your beautiful journey together</p>
         </header>
 
@@ -248,6 +241,10 @@ function App() {
           <div className="heart">💝</div>
           <div className="heart">💘</div>
         </div>
+
+        <footer className="footer">
+          <p>Made with 💕 by <a href="https://github.com/ItsmeMattyou" target="_blank" rel="noopener noreferrer" className="credit-link">ItsmeMattyou</a></p>
+        </footer>
       </div>
     </div>
   );

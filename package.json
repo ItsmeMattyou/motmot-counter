@@ -2,7 +2,7 @@
   "name": "motmot-counter",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://karamel.github.io/motmot-counter",
+  "homepage": ".",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -16,7 +16,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "vercel-build": "npx react-scripts build"
+    "vercel-build": "CI=false react-scripts build"
   },
   "eslintConfig": {
     "extends": [
